@@ -1,0 +1,15 @@
+<div class="body">
+    <p>{{titulo}}</p>
+    <div class="">
+        <input type="text" #nombres placeholder="Ingrese un dato al array">
+        <button class="btn btn-outline-warning" (click)="addcurso(nombres.value)">ADD</button>
+    </div>
+    <ul>
+        <div *ngFor="let nom of cursos">
+            <li>{{nom}}</li>
+        </div>
+    </ul>
+</div>
+
+
+
